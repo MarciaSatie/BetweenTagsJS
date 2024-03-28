@@ -1,4 +1,14 @@
 import React from 'react'
+import CardSingleStructure from "./CardSingleStructure"
+// import Swiper core and required modules
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 
 export default function CardGroup(props) {
     const content = [...props.contentList];
@@ -10,7 +20,34 @@ export default function CardGroup(props) {
             {groupLogo}
             <h1 className="font-mono font-bold text-xl pl-4 text-white ">{props.title}</h1>
         </div>
-        blabla
+
+        <Swiper
+           modules={[Navigation, Pagination, Scrollbar, A11y]}
+           spaceBetween={10}
+           slidesPerView={4}
+           navigation
+           pagination={{ clickable: true }}
+           scrollbar={{ hide: true}}
+           onSwiper={(swiper) => console.log(swiper)}
+           onSlideChange={() => console.log('slide change')}
+        >
+        
+            {content.map((item) => (
+              <SwiperSlide>
+                <div className="max-h-60 min-w-40 overflow-auto no-scrollbar bg-white">
+              <CardSingleStructure
+                logo={item.logo}
+                key={item.key}
+                title={item.title}
+                cardDate={item.date}
+                text={item.cardContent}
+              />
+          </div>
+          </SwiperSlide>
+          ))}
+      ...
+    </Swiper>
+       
     </div>
     
     </>
