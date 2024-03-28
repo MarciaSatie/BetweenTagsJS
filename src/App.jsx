@@ -1,5 +1,5 @@
 import Header from './Components/Header'
-import MEditor from './Components/Editor/MEditor'
+import EditorOutput from './Components/Editor/EditorComplete/EditorOutput';
 import CardsGroup from './Components/Cards/CardGroup'
 import contentReact from "./Components/Content/React/Content"
 
@@ -13,7 +13,7 @@ function App() {
     <>
     
     <Header/>
-    <MEditor/>
+    <EditorOutput/>
 
     <CardsGroup
       title ={"React"}
