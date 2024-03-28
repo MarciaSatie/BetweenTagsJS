@@ -34,7 +34,12 @@ export default function EditorOutput() {
                  language={language}
             />
         </div>
-        <div>
+        <details>
+            <summary className="font-header text-lg bg-black pt-4 pl-4 pb-2 text-pink-300 font-bold ">
+                Editor
+            </summary>
+
+            <div>
             <LanguagerSelector
                 language ={language}
                 onSelect={onSelect}
@@ -64,6 +69,8 @@ export default function EditorOutput() {
             minimap: { scale: 20}
           }}
           />
+        </details>
+        
     </div>
   )
 }
