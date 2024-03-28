@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
+    "ace-builds": "^1.32.8",
     "firebase": "^10.9.0",
     "github-delete": "^2019.5.8",
     "monaco-editor": "^0.47.0",
     "react": "^18.2.0",
+    "react-ace": "^11.0.1",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-modal": "^3.16.1",

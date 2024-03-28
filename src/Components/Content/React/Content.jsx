@@ -8,12 +8,14 @@ const logo = <FaReact size={30} style={{
 
 
 import CreateNewProject from "./CardContent/CreateNewProject"
+import ReactSnippets from "./CardContent/React Snippets"
 
 
 const content =[];
 
 content.push(
   CreateNewProject,
+  ReactSnippets,
 
   
 );
