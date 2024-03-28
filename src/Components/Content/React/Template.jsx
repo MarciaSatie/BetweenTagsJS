@@ -14,7 +14,7 @@ function CardContent() {
     />
 
     <details>
-      <summary>
+      <summary className='text-pink-700'>
         <strong></strong>
       </summary>
       <p></p>
