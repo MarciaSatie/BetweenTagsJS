@@ -14,7 +14,7 @@ function App() {
     
     <Header/>
     <EditorOutput/>
-
+    
     <CardsGroup
       title ={"React"}
       contentList ={contentReact}

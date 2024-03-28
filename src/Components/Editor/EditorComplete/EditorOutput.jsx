@@ -2,6 +2,7 @@ import LanguagerSelector from './LanguagerSelector'
 import Editor, { DiffEditor, useMonaco, loader } from '@monaco-editor/react';
 import { useRef, useState } from "react";
 import { CodeSnippets } from "./LanguageOptions";
+import Output from './Output';
 
 
 import React from 'react'
@@ -27,6 +28,12 @@ export default function EditorOutput() {
 
   return (
     <div>
+        <div>
+            <Output
+                 editorRef ={editorRef}
+                 language={language}
+            />
+        </div>
         <div>
             <LanguagerSelector
                 language ={language}

@@ -12,6 +12,7 @@
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
     "ace-builds": "^1.32.8",
+    "axios": "^1.6.8",
     "firebase": "^10.9.0",
     "github-delete": "^2019.5.8",
     "monaco-editor": "^0.47.0",
