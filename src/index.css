@@ -1,0 +1,39 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+     /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+  }
+  
+  ol {
+    list-style-type: decimal;
+ 
+  }
+  
+  ul {
+    list-style-type: disc;
+
+  }
+  
+  /* Ensure lists have padding to show bullets */
+  ol, ul {
+    padding-left: 2rem;
+  }
+  
+  a {
+    color: #DC0190; /* Custom pink color, or you can use a Tailwind color like 'text-blue-500' in your JSX */
+    text-decoration: underline; /* Optional: if you want links to be underlined by default */
+  }
