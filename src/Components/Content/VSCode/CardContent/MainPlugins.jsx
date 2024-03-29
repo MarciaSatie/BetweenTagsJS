@@ -1,38 +1,22 @@
 
-import AEditor from './../../../Editor/AceEditor'
+import AEditor from '../../../Editor/AceEditor'
 
 
-const cardTitle ="REact Snippets";
+const cardTitle ="Main Plugins";
 const cardDate = createDate("2024-03-28");
 const cardContent = CardContent();
 
 function CardContent() {
   return (
   <>
-<AEditor
-      code ={`Add code here`}
-    />
-
-    <details>
-      <summary className='text-pink-700'>
-        <strong></strong>
-      </summary>
-      <p></p>
-    </details>
-
-    <ol >
-      <li></li>
-    </ol>
-
-    <ul >
-      <li></li>
-    </ul>
-    <br />
-
-    <details>
-      <summary className='font-bold'>Install Tailwind CSS with Vite</summary>
-      <a href="https://tailwindcss.com/docs/guides/vite">Tailwind CSS with Vite Link.</a>
-    </details>
+<h2 className='font-bold'>List of usefull plugins to install at VS Code.</h2>
+      <br></br>
+      <ul>
+        <li><a href='https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag'>Auto Rename Tag (HTML)</a> </li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode">Prettier-Code Formater</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server (Web Developement)</a></li>
+        <li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets">JavaScript (ES6) Code Snippets</a></li>
+      </ul>
 
   </>
     

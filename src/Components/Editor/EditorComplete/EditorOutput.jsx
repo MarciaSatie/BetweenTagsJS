@@ -3,7 +3,7 @@ import Editor, { DiffEditor, useMonaco, loader } from '@monaco-editor/react';
 import { useRef, useState } from "react";
 import { CodeSnippets } from "./LanguageOptions";
 import Output from './Output';
-import Btn from './Btn';
+
 
 
 import React from 'react'
@@ -45,10 +45,7 @@ export default function EditorOutput() {
                 language ={language}
                 onSelect={onSelect}
             />
-            <Btn
-            name={"Run Code"}
-            runCode={`test`}
-            />
+
         </div>
 
 
