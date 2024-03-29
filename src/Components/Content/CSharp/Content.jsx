@@ -1,6 +1,5 @@
 const logo = <img className="size-7"
-src="https://firebasestorage.googleapis.com/v0/b/between-tags2.appspot.com/o/logos%2Fvscode.png?alt=media&token=2ad5aa14-0e4c-4bed-8a4d-63761e8086df"/>;
-
+src="https://firebasestorage.googleapis.com/v0/b/between-tags2.appspot.com/o/logos%2FCSharp.png?alt=media&token=d7eb637f-fad0-49b3-9a5e-a445ace4421a"/>
 
 
 
