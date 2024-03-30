@@ -1,8 +1,8 @@
 
-import AEditor from './../../../Editor/AceEditor'
+import AEditor from '../../../Editor/AceEditor'
 
 
-const cardTitle ="REact Snippets";
+const cardTitle ="Console interactions";
 const cardDate = createDate("2024-03-28");
 const cardContent = CardContent();
 
@@ -15,9 +15,23 @@ function CardContent() {
 
     <details>
       <summary className='text-pink-700'>
-        <strong></strong>
+        <strong>Console.log</strong>
       </summary>
       <p></p>
+    </details>
+
+
+    <details>
+      <summary className='text-pink-700'>
+        <strong>String Interpolation</strong>
+      </summary>
+      <p></p>
+      <AEditor
+      code ={`let name = "John";
+let age = 30;
+console.log(\`My name is \${name} and I am \${age} years old.\`);
+`}
+    />
     </details>
 
     <ol >
@@ -29,10 +43,6 @@ function CardContent() {
     </ul>
     <br />
 
-    <details>
-      <summary className='font-bold'>Install Tailwind CSS with Vite</summary>
-      <a href="https://tailwindcss.com/docs/guides/vite">Tailwind CSS with Vite Link.</a>
-    </details>
 
   </>
     

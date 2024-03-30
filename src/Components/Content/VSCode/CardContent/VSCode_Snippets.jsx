@@ -18,7 +18,7 @@ function CardContent() {
     <br/>
 
 
-    <details>
+    <details open>
       <summary className="font-bold">
         Basic Editing
       </summary>
@@ -29,6 +29,10 @@ function CardContent() {
         <p>Move the line Up or Down.</p>
       </details>
 
+      <details>
+        <summary >Ctrl+L</summary>
+        <p>select current line.</p>
+      </details>
 
       <details>
         <summary className="text-pink-700">Alt+Click</summary>
@@ -73,7 +77,7 @@ function CardContent() {
    <details>
     <summary className="font-bold">Add Emojis</summary>
     <p>Windows: Press Windows+.</p>
-    <p>macOS: Press CMD+CTRL+Apace</p>
+    <p>macOS: Press CMD+CTRL+Space</p>
    </details>
 
   </>

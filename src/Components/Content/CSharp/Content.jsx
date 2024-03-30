@@ -1,15 +1,17 @@
 const logo = <img className="size-7"
-src="https://firebasestorage.googleapis.com/v0/b/between-tags2.appspot.com/o/logos%2FCSharp.png?alt=media&token=d7eb637f-fad0-49b3-9a5e-a445ace4421a"/>
+src="https://firebasestorage.googleapis.com/v0/b/between-tags2.appspot.com/o/logos%2FCSharp.png?alt=media&token=d7eb637f-fad0-49b3-9a5e-a445ace4421a"/>;
 
 
 
-import Card1 from "./CardContent/Card1"
-
+import Card1 from "./CardContent/Card1";
+import Variables from "./CardContent/Variables"
 
 const content =[];
 
 content.push(
-  Card1
+  Card1,
+ 
+  Variables
 
   
 );

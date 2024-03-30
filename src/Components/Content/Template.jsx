@@ -2,54 +2,45 @@
 import AEditor from './../../../Editor/AceEditor'
 
 
-const cardTitle ="Console Interactions";
+const cardTitle ="XXX";
 const cardDate = createDate("2024-03-28");
 const cardContent = CardContent();
 
 function CardContent() {
   return (
   <>
-{/* <AEditor
-      code ={`Add code here`}
-    /> */}
 
     <details>
       <summary className='text-pink-700'>
-        <strong>Console.ReadLine()</strong>
+        <strong></strong>
       </summary>
-      <p>Reads user input from the Console, returning a String</p>
+      <p></p>
       <AEditor
-      code ={`Console.WriteLine("Enter your name:");
-string name = Console.ReadLine(); // Will read user input (example: Joe) and storage in the variable name.
-Console.WriteLine("Hello, " + name + "!");//Output: Hello, Joe!`}
+      code ={`Add code here`}
     />
     </details>
 
     <details>
       <summary>
-        <strong>Console.WriteLine() and Console.Write()</strong>
+        <strong></strong>
       </summary>
-      <p>Displays output to the Console</p>
-      <p>The difference between both is: Console.WriteLine will skip to the next line, while Console.Write will print the messaege in the same line.</p>
-      <p>Snippets for Console.WriteLine is: <strong>cw (press tab 2x)</strong> </p>
+      <p></p>
       <AEditor
-      code ={`Console.WriteLine("Hello, World!");`}
+      code ={`Add code here`}
     />
     </details>
 
+    <ol >
+      <li></li>
+    </ol>
 
-    <details>
-      <summary className='text-pink-700'>
-        <strong>String Interpolation</strong>
-      </summary>
-      <p>In C#, string interpolation is achieved by prefixing a string literal with the $ symbol. Within the string, you can embed expressions by wrapping them in curly braces {}.</p>
-      <AEditor
-      code ={`string name = "John";
-int age = 30;
-Console.WriteLine($"My name is {name} and I am {age} years old.");
-      `}
-    />
-    </details>
+    <ul >
+      <li></li>
+    </ul>
+    <br />
+
+ 
+
   </>
     
   )

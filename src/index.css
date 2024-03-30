@@ -37,3 +37,10 @@
     color: #DC0190; /* Custom pink color, or you can use a Tailwind color like 'text-blue-500' in your JSX */
     text-decoration: underline; /* Optional: if you want links to be underlined by default */
   }
+
+  code{
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    display: block;
+  }

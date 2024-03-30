@@ -6,13 +6,14 @@ import CardSearch from "./Components/Cards/CardGroupSearch/CardsGroupSearch"
 import contentReact from "./Components/Content/React/Content"
 import contentVSCode from "./Components/Content/VSCode/Content"
 import contentCSharp from "./Components/Content/CSharp/Content"
+import contentJS from "./Components/Content/Javascript/Content"
 
 import { FaReact } from "react-icons/fa";
 
 
 function App() {
 
-  let listAll = [...contentCSharp,...contentVSCode,...contentReact];
+  let listAll = [...contentCSharp,...contentVSCode,...contentReact,...contentJS];
 
   return (
     <>
@@ -27,6 +28,11 @@ function App() {
     <CardsGroup
       title ={"C#"}
       contentList ={contentCSharp}
+    />
+
+    <CardsGroup
+      title ={"Javascript"}
+      contentList ={contentJS}
     />
 
     <CardsGroup
