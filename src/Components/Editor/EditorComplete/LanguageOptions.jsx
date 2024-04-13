@@ -11,7 +11,8 @@ export const LanguageOptions = {
 
 
 export const CodeSnippets ={
-    javascript: `console.log("Welcome to <Between-Tags!/>");`,
+    javascript: `console.log("Welcome to <Between-Tags!/>");
+console.log("< Tag along />  ✧( • ᴗ - ) ✧");`,
     typescript:`console.log("Welcome to <Between-Tags!/>");`,
     python:`print("Welcome to <Between-Tags!/>")`,
     java:`var name = "Welcome to <Between-Tags!/>";

@@ -5,13 +5,17 @@ src="https://firebasestorage.googleapis.com/v0/b/between-tags2.appspot.com/o/log
 
 import Card1 from "./CardContent/Card1";
 import Variables from "./CardContent/Variables"
+import OOP from "./CardContent/OOP"
+import Classes from "./CardContent/Classes"
 
 const content =[];
 
 content.push(
   Card1,
- 
-  Variables
+  Variables,
+  OOP,
+  Classes,
+  
 
   
 );

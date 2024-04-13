@@ -9,8 +9,8 @@ function AEditor(props) {
  
   return (
     <AceEditor
-      height="100px"
-      width="100%"a
+      height={props.h ||"100px" }
+      width="100%"
       value={propToString}
       mode="javascript"
       theme="monokai"

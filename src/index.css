@@ -44,3 +44,11 @@
     color: aliceblue;
     display: block;
   }
+*{
+    scrollbar-color: rgb(238, 176, 223) rgb(0, 0, 0);
+    scrollbar-width: thin;
+}
+
+.swiper-pagination-bullet:hover{
+  background: red;
+}

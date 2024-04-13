@@ -7,13 +7,14 @@ import contentReact from "./Components/Content/React/Content"
 import contentVSCode from "./Components/Content/VSCode/Content"
 import contentCSharp from "./Components/Content/CSharp/Content"
 import contentJS from "./Components/Content/Javascript/Content"
+import contentPS from "./Components/Content/Powershell/Content"
 
 import { FaReact } from "react-icons/fa";
 
 
 function App() {
 
-  let listAll = [...contentCSharp,...contentVSCode,...contentReact,...contentJS];
+  let listAll = [...contentCSharp,...contentVSCode,...contentReact,...contentJS,...contentPS];
 
   return (
     <>
@@ -43,6 +44,12 @@ function App() {
     <CardsGroup
       title ={"VS Code"}
       contentList ={contentVSCode}
+    />
+
+
+    <CardsGroup
+      title ={"Powershell"}
+      contentList ={contentPS}
     />
 
     </>

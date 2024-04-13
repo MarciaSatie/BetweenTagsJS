@@ -1,13 +1,15 @@
 import React from 'react'
 import CardSingleStructure from "./CardSingleStructure"
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { EffectCoverflow,Navigation, Pagination, Scrollbar, A11y,EffectCards } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+
+
 
 
 export default function CardGroup(props) {
@@ -22,14 +24,27 @@ export default function CardGroup(props) {
         </div>
 
         <Swiper
-           modules={[Navigation, Pagination, Scrollbar, A11y]}
+           modules={[Navigation, Pagination, Scrollbar, A11y,EffectCoverflow]}
            spaceBetween={10}
-           slidesPerView={4}
            navigation
            pagination={{ clickable: true }}
            scrollbar={{ hide: true}}
            onSwiper={(swiper) => console.log(swiper)}
            onSlideChange={() => console.log('slide change')}
+           effect = {'coverflow'}
+           grabCursor ={true}
+           centeredSlides={true}
+           loop={true}
+           slidesPerView={4}
+           coverflowEffect={
+              {
+                rotate:0,
+                stretch:0,
+                depth:100,
+                modifier:2.5,
+              }
+           }
+    
         >
         
             {content.map((item) => (

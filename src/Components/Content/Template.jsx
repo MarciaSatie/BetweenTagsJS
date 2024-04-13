@@ -17,7 +17,7 @@ function CardContent() {
       <p></p>
       <AEditor
       code ={`Add code here`}
-    />
+      h = {"100px"}/>
     </details>
 
     <details>
@@ -27,7 +27,7 @@ function CardContent() {
       <p></p>
       <AEditor
       code ={`Add code here`}
-    />
+      h = {"100px"}/>
     </details>
 
     <ol >
